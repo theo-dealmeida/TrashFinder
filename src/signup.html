@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/signup.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/loginform.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>S'inscrire</title>
+</head>
+<body>
+<header>
+    <div id="navbar">
+        <img src="./assets/logo.png">
+        <ul class="show-dropdown main-navbar">
+            <div class="selector-active">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <li><a href="index.html" style="pointer-events: none;"><i class="fa fa-map"></i>Trash Map</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container-form">
+    <h1 id="welcome">Sign up</h1>
+
+    <form id="loginForm" class="form">
+        <input id="username" name="username" type="text" placeholder="Username" autocomplete="off" required>
+        <input id="password" name="password" type="password" placeholder="Password" autocomplete="off" required>
+        <input id="checkPassword" name="checkPassword" type="password" placeholder="Check password" autocomplete="off" required>
+
+        <button type="reset">Reset</button>
+        <button id="login-button" type="submit">Sign up</button>
+    </form>
+</div>
+
+</body>
+</html>
