@@ -16,3 +16,9 @@ $(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  document.getElementById("go-to-signup").onclick = function(){
+    window.location.href = './signup.html';
+  };
+});

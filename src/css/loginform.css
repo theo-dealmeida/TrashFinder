@@ -57,3 +57,20 @@
   form button:hover {
     background-color: #0eb10e;
   }
+
+  #go-to-signup {
+    outline: 0;
+    background-color: rgb(77, 203, 77);
+    border: 0;
+    border-radius: 3px;
+    width: 515px;
+    padding: 10px 15px;
+    margin: 0px auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #go-to-signup:hover {
+    background-color: #0eb10e;
+  }
