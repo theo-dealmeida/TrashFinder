@@ -1,0 +1,10 @@
+{
+    "trash1" : { 
+        "lat" : "lat", 
+        "lon" : "lon",
+        "supportedTypes" : [ 
+            "glass",
+            "paper"
+        ]
+    }
+}
