@@ -1,5 +1,5 @@
 #navbar {
-	background: #008000;
+	background: rgb(77, 203, 77);
 
 	width: 250px;
 	padding: 10px;
@@ -36,7 +36,7 @@
 }
 
 #navbar>ul>li.active>a{
-	color: #008000;
+	color: rgb(77, 203, 77);
 	background-color: transparent;
 	transition: all 0.7s;
 }
@@ -97,7 +97,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #008000;
+    background-color: rgb(77, 203, 77);
 }
 
 .selector-active .top:before{
