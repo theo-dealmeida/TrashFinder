@@ -3,6 +3,9 @@
  * create the form to login with a username and a password
  */
 $(function () {
+  if(localStorage.getItem('currentUser')){
+    window.location.href = 'index.html';
+}
   $('#loginForm').on('submit', (event) => {
     event.preventDefault();
     const username = $('#username').val();
@@ -10,6 +13,7 @@ $(function () {
     $.getJSON('data/users.json', function(data){
       if(data[username])
         if(password == data[username]["password"]){
+          localStorage.setItem('currentUser', data[username]["username"]);
           window.location.href = 'index.html'
         }
         else{
