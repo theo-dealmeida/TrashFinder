@@ -1,7 +1,10 @@
 {
     "mailAdresse": {
         "username" : "peter",
-        "login" : "aaa",
+        "password" : "bbb"
+    },
+    "aaa": {
+        "username" : "Marc",
         "password" : "bbb"
     }
 }

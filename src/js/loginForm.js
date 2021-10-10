@@ -5,15 +5,30 @@
 $(function () {
   $('#loginForm').on('submit', (event) => {
     event.preventDefault();
-
     const username = $('#username').val();
     const password = $('#password').val();
-
-    $.post('/login', { username: username, password: password }, (data, statusText) => {
-      window.location.href = '/dashboard';
-    }).fail((error) => {
-      window.alert(error.responseJSON ? error.responseJSON.error : error.responseText);
+    $.getJSON('data/users.json', function(data){
+      if(data[username])
+        if(password == data[username]["password"]){
+          window.location.href = 'index.html'
+        }
+        else{
+          alert("Mot de passe incorrect");
+          $('#password').val('');
+        }
+        else{
+          alert("L'adresse mail saisie ne correspond à aucun utilisateur");
+          $('#username').val('');
+      }
     });
+    
+    // $.post('/login', { username: username, password: password }, (data, statusText) => {
+      
+      
+    //   window.location.href = '/dashboard';
+    // }).fail((error) => {
+    //   window.alert(error.responseJSON ? error.responseJSON.error : error.responseText);
+    // });
   });
 });
 
