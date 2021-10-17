@@ -7,3 +7,6 @@ function hideUnhide() {
         searchbar.style.display = "none";
     }
 }
+
+$(document).ready(function () {    
+});
