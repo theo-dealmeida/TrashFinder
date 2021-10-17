@@ -65,7 +65,6 @@ function showGlassesTrash() {
         marker6 = new mapboxgl.Marker({ color: 'green'})
         .setLngLat([7.063547, 43.617460])
         .addTo(this.map);
-        //43.616613,7.066385
         marker7 = new mapboxgl.Marker({ color: 'green'})
         .setLngLat([7.067738, 43.617806])
         .addTo(this.map);
