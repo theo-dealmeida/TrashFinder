@@ -1,6 +1,6 @@
 $(function () {
     if(!localStorage.getItem('currentUser')){
-        alert("Vous devez être connecté pour accéder à cette page")
+        alert("You must be logged in to access to this page")
         window.location.href = 'login.html'
     }
     $("#logout").on('click', () => {

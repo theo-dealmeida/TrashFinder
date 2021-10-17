@@ -1,7 +1,3 @@
-/* globals $ */
-/**
- * create the form to login with a username and a password
- */
 $(function () {
   if(localStorage.getItem('currentUser')){
     window.location.href = 'index.html';
@@ -11,28 +7,20 @@ $(function () {
     const username = $('#username').val();
     const password = $('#password').val();
     $.getJSON('data/users.json', function(data){
-      if(data[username])
+      if(data[username]){
         if(password == data[username]["password"]){
           localStorage.setItem('currentUser', data[username]["username"]);
           window.location.href = 'index.html'
         }
         else{
-          alert("Mot de passe incorrect");
-          $('#password').val('');
+          alert("Wrong password or username");
+          $('#loginForm').trigger("reset");
         }
-        else{
-          alert("L'adresse mail saisie ne correspond à aucun utilisateur");
-          $('#username').val('');
+      }else{
+        alert("Wrong password or username");
+        $('#loginForm').trigger("reset");
       }
     });
-    
-    // $.post('/login', { username: username, password: password }, (data, statusText) => {
-      
-      
-    //   window.location.href = '/dashboard';
-    // }).fail((error) => {
-    //   window.alert(error.responseJSON ? error.responseJSON.error : error.responseText);
-    // });
   });
 });
 
