@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <link href="css/signup.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/loginform.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/navbar.js"></script>
     <meta charset="UTF-8">
     <title>S'inscrire</title>
 </head>
 <body>
-<header>
-    <div id="navbar">
+    <header>
+        <div id="navbar">
         <img src="./assets/logo.png">
         <ul class="show-dropdown main-navbar">
-            <div class="selector-active">
-                <div class="top"></div>
-                <div class="bottom"></div>
-            </div>
-            <li><a href="index.html" style="pointer-events: none;"><i class="fa fa-map"></i>Trash Map</a></li>
-            <li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
-        </ul>
-    </div>
-</header>
+            <div class="selector-active"><div class="top"></div><div class="bottom"></div></div>
+                <li><a href="index.html"><i class="fa fa-map"></i>Trash Map</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
+                <li class="active"><a href="#" style="pointer-events: none;"><i class="fa fa-user"></i>Sign up</a></li>
+            </ul>
+        </div>
+    </header>
 
 <div class="container-form">
     <h1 id="welcome">Sign up</h1>
