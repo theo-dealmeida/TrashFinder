@@ -34,7 +34,7 @@ app.post("/saveUser", async (req, res) => {
         let json = JSON.parse(data);
         json[body.username] = {password : body.password}
 
-        await fs.writeFile(filePath, JSON.stringify(json), (err) => {
+        fs.writeFile(filePath, JSON.stringify(json), (err) => {
             if(err){
                 console.log(err)
             }
